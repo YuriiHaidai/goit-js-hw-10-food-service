@@ -22,8 +22,8 @@ const Theme = {
 };
 
 const persistedTheme = localStorage.getItem('theme');
-
-if (persistedTheme === Theme.LIGHT) {
+console.log(persistedTheme);
+if (persistedTheme === Theme.LIGHT || persistedTheme === null) {
   refs.body.classList.add(Theme.LIGHT);
 } else {
   refs.body.classList.add(Theme.DARK);
